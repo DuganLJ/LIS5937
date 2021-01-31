@@ -31,3 +31,5 @@ Error in colMeans(results.df) : 'x' must be numeric
 > colMeans(results.df[2:3])
      ABC      CBS 
 24.14286 27.14286 
+> rowMeans(results.df[2:3])
+[1]  8.0 68.5 47.0 20.0  1.5 17.5 17.0
