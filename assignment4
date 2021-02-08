@@ -1,0 +1,30 @@
+> freq <- c(0.6,0.3,0.4,0.4,0.2,0.6,0.3,0.4,0.9,0.2)
+> bloodp <- c(103,87,32,42,59,109,78,205,135,176)
+> first <- c(1,1,1,1,0,0,0,0,NA,1)
+> second <- c(0,0,1,1,0,0,1,1,1,1)
+> finaldecision <- c(0,1,0,1,0,1,0,1,1,1)
+> data.frame(freq, bloodp, first, second,finaldecision)
+   freq bloodp first second finaldecision
+1   0.6    103     1      0             0
+2   0.3     87     1      0             1
+3   0.4     32     1      1             0
+4   0.4     42     1      1             1
+5   0.2     59     0      0             0
+6   0.6    109     0      0             1
+7   0.3     78     0      1             0
+8   0.4    205     0      1             1
+9   0.9    135    NA      1             1
+10  0.2    176     1      1             1
+> boxplot(bloodp) 
+> hist(bloodp)
+> boxplot(first)
+> hist(first)
+> hist(second)
+> hist(finaldecision)
+> par(mfrow=c(1,2))
+> hist(bloodp[first==0])
+> hist(bloodp[first==1])
+> hist(bloodp[second==0])
+> hist(bloodp[second==1])
+> hist(bloodp)
+> boxplot(bloodp)
