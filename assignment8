@@ -39,3 +39,32 @@ The downloaded binary packages are in
 Error in FUN(X[[i]], ...) : object 'Sex' not found
 > StudentAverage = ddply(SA6,"Sex",transform,Grade.Average=mean(Grade))
 Error in FUN(X[[i]], ...) : object 'Sex' not found
+
+> SA6
+       Name.Age.Sex.Grade
+1         Raul,25,Male,80
+2       Booker,18,Male,83
+3      Lauri,21,Female,90
+4     Leonie,21,Female,91
+5    Sherlyn,22,Female,85
+6    Mikaela,20,Female,69
+7      Raphael,23,Male,91
+8       Aiko,24,Female,97
+9   Tiffaney,21,Female,78
+10    Corina,23,Female,81
+11 Petronila,23,Female,98
+12    Alecia,20,Female,87
+13   Shemika,23,Female,97
+14    Fallon,22,Female,90
+15   Deloris,21,Female,67
+16    Randee,23,Female,91
+17     Eboni,20,Female,84
+18   Delfina,19,Female,93
+19 Ernestina,19,Female,93
+20        Milo,19,Male,67
+> StudentAverage = ddply(Student,"Sex",transform,Grade.Average=mean(Grade))
+Error in FUN(X[[i]], ...) : object 'Sex' not found
+> 
+> sex = Student$Sex
+> mean(Sex)
+Error in mean(Sex) : object 'Sex' not found
